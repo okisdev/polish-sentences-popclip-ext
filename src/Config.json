@@ -1,0 +1,36 @@
+{
+  "name": "Polish Sentences",
+  "icon": "iconify:icon-park:correct",
+  "identifier": "dev.okisdev.popclip.ext.polish-sentences",
+  "description": "A PopClip extension to polish sentences.",
+  "note": "<a href=\"https://platform.openai.com/account/api-keys\">OpenAI API key</a> required, and also you can change the proxy API config in the extension settings.",
+  "macos version": "11.0",
+  "popclip version": 4069,
+  "version": "0.0.1",
+  "author": "Harry Yep",
+  "options": [
+    {
+      "identifier": "openai_api_url",
+      "type": "string",
+      "label": "OpenAI API url",
+      "description": "The OpenAI API url",
+      "defaultValue": "https://api.openai.com"
+    },
+    {
+      "identifier": "openai_api_key",
+      "type": "string",
+      "label": "OpenAI API Key",
+      "description": "The OpenAI API key, if your network is not accessible to the OpenAI API, you can use a proxy API"
+    },
+    {
+      "identifier": "openai_api_temperature",
+      "type": "string",
+      "label": "OpenAI API Temperature",
+      "description": "DON'T CHANGE THIS UNLESS YOU KNOW WHAT YOU ARE DOING.",
+      "defaultValue": "1"
+    }
+  ],
+  "entitlements": [
+    "network"
+  ]
+}
