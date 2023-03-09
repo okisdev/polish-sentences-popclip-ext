@@ -1,4 +1,6 @@
+import os
 import shutil
 
-shutil.rmtree('src.popclipext', ignore_errors=True)
-shutil.copytree('src', 'src.popclipext')
+if os.path.exists('polish-sentences.popclipext'):
+    shutil.rmtree('polish-sentences.popclipext', ignore_errors=True)
+shutil.copytree('src', 'polish-sentences.popclipext')

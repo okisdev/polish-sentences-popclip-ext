@@ -6,7 +6,7 @@
   "note": "<a href=\"https://platform.openai.com/account/api-keys\">OpenAI API key</a> required, and also you can change the proxy API config in the extension settings.",
   "macos version": "11.0",
   "popclip version": 4069,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Harry Yep",
   "options": [
     {
@@ -28,6 +28,13 @@
       "label": "OpenAI API Temperature",
       "description": "DON'T CHANGE THIS UNLESS YOU KNOW WHAT YOU ARE DOING.",
       "defaultValue": "1"
+    },
+    {
+      "identifier": "replace_text",
+      "type": "boolean",
+      "label": "Replace Text",
+      "description": "Replace the selected text with the polished text",
+      "defaultValue": true
     }
   ],
   "entitlements": [

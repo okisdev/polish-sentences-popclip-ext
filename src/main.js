@@ -34,7 +34,7 @@ const polishSentences = async (input, options) => {
 
     const response = data.choices[0].message.content.trim();
 
-    return popclip.pasteText(input.text + '\n' + response);
+    return popclip.pasteText(options.replace_text ? response : input.text + '\n' + response);
 };
 
 exports.actions = [
